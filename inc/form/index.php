@@ -5,8 +5,8 @@ require_once base_root() . '/index.php';
 require_once base_root() . '/inc/global.php';
 
 $servername = "localhost";
-$username = "segun";
-$password = 1;
+$username = "datakript";
+$password = "DK@online";
 $db = "segunmayor";
 
 require_once base_root() . '/inc/conn/index.php';
