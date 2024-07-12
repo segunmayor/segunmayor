@@ -1,15 +1,15 @@
 <?php
 
-require_once base_root() . '/index.php';
+require_once sm_base_root() . '/index.php';
 
-require_once base_root() . '/inc/global.php';
+require_once sm_base_root() . '/inc/global.php';
 
 $servername = "localhost";
 $username = "segun";
 $password = 1;
 $db = "segunmayor";
 
-require_once base_root() . '/inc/conn/index.php';
+require_once sm_base_root() . '/inc/conn/index.php';
 
 /**
  * 
@@ -34,7 +34,7 @@ function isForm ()
     
     if ( $_SERVER["REQUEST_METHOD"] !== "POST" ){
         die("This is not allowed.");
-        return header("This is not allowed", base_uri());
+        return header("This is not allowed", sm_base_uri());
     }
 
     $key = $value = null;

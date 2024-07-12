@@ -1,6 +1,6 @@
 <?php
 
-require_once base_root() . '/inc/mailer/index.php';
+require_once sm_base_root() . '/inc/mailer/index.php';
 
 /**
  * Open db connection

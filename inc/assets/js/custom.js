@@ -5,7 +5,7 @@ function runDialog () {
 
 const dialog = document.querySelector('dialog')
 
-console.log('dialog dialog: ', dialog)
+// console.log('dialog dialog: ', dialog)
 
 if(dialog !== null)
 {

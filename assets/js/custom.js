@@ -100,7 +100,7 @@
             loadScript(plugin_track + 'jquery.magnific-popup.min.js', function() {
                 if ($(".lightbox-gallery").exists()) {
                     $('.lightbox-gallery').magnificPopup({
-                        delegate: '.gallery-link',
+                        delegate: '.gallery-link2',
                         type: 'image',
                         tLoading: 'Loading image #%curr%...',
                         mainClass: 'mfp-fade',

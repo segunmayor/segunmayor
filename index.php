@@ -1,7 +1,7 @@
 <?php 
 include "./inc/function.php";
 
-$recaptcha_client_key = recaptcha_client_key();
+$recaptcha_client_key = sm_recaptcha_client_key();
  ?>
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
@@ -46,6 +46,8 @@ $recaptcha_client_key = recaptcha_client_key();
 <!-- Body Start -->
 
 <body>
+     <!-- overlay -->
+      <div class="overlay"></div>
     <!-- Header Top -->
     <header class="main-header d-lg-none">
         <div class="container">
@@ -127,7 +129,7 @@ $recaptcha_client_key = recaptcha_client_key();
                             <h6>👋 Hi, I’ m</h6>
                             <h1>Segun <span><img src="assets/img/m.jpg" title="" alt=""></span>Mayor</h1>
                             <h2>I'm a <span id="type-it"></span></h2>
-                            <p class="pe-lg-5">You have problems you're thinking of solving with softwares or you're stock between a problem you're already solving with tech? Why not talk to me about it? I always work it down to get solutions for every problems you might be having. We can work things out today. </p>
+                            <p class="pe-lg-5">I partner with startups and organizations to build digital products that help clients overcome challenges and create lasting connections with millions of people every day.</p>
                             <div class="btn-bar">
                                 <a class="px-btn px-btn-theme" href="assets/pdf/segun_mayor_cv_fs.pdf" download>Download cv <i class="bi-download"></i> </a>
                             </div>
@@ -164,7 +166,7 @@ $recaptcha_client_key = recaptcha_client_key();
                             <div class="about-me-text pb-5">
                                 <h3>My name is Segun Mayor</h3>
                                 <h5><span>I Am Available</span> For software   Projects</h5>
-                                <p>I'm a full stack software engineerwith specialty in creating software programsand maintainance of application code  using best practices.</p>
+                                <p>I'm a full stack software engineerwith specialty in creating software programs and maintainance of application code  using best practices.</p>
                                 <!-- <div class="row pt-2">
                                     <div class="col-auto">
                                         <div class="a-count">
@@ -225,7 +227,7 @@ $recaptcha_client_key = recaptcha_client_key();
                             <div class="row align-items-start">
                                 <div class="col-md-7 py-4">
                                     <div class="about-me-img">
-                                        <img src="assets/img/mm2.jpg" title="" alt="">
+                                        <img src="assets/img/mayor.jpeg" title="" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-5 py-4">
@@ -252,7 +254,7 @@ $recaptcha_client_key = recaptcha_client_key();
                                                     <i class="fab fa-whatsapp"></i>
                                                 </div>
                                                 <div class="a-text">
-                                                    <a class="text-reset stretched-link" href="https://api.whatsapp.com/send?phone=2349092149449&text=Hi%2C%20I%20saw%20your%20profile%20and%20I%20am%20interested%20to%20know%20more%20about%20you.">WhatsApp Me</a>
+                                                    <a class="text-reset stretched-link" href="https://api.whatsapp.com/send?phone=2349092149449&text=Hi%2C%20I%20saw%20your%20profile%20and%20I%20would%20like%20to%20discuss%20some%20projects%20with%20you.">WhatsApp Me</a>
                                                 </div>
                                             </li>
                                             <li>
@@ -268,7 +270,7 @@ $recaptcha_client_key = recaptcha_client_key();
                                                     <i class="fa-solid fa-linkedin"></i>
                                                 </div>
                                                 <div class="a-text">
-                                                    <a class="text-reset stretched-link" href="#">Linkedin</a>
+                                                    <a class="text-reset stretched-link" href="https://www.linkedin.com/in/segunmayor">Linkedin</a>
                                                 </div>
                                             </li>
                                         </ul>
@@ -423,7 +425,30 @@ $recaptcha_client_key = recaptcha_client_key();
                     <p><small>From list of projects...</small></p>
                 </div>
                 <div class="lightbox-gallery">
-                    <div class="row g-3 g-lg-4 portfolio-content">
+                    <div class="container">
+<div class="row">
+<div class="col">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" aria-current="page" href="#" id="web-tab" data-bs-toggle="tab" data-bs-target="#web" aria-selected="false">Web</a>
+  </li>
+  <!-- <li class="nav-item" role="presentation">
+    <a class="nav-link" href="#" id="desktop-tab" data-bs-toggle="tab" data-bs-target="#desktop" aria-selected="false">Desktop</a>
+  </li> -->
+  <!-- <li class="nav-item" role="presentation">
+    <a class="nav-link" href="#" id="newsletter-tab" data-bs-toggle="tab" data-bs-target="#newsletter" aria-selected="false">Newsletter</a>
+  </li> -->
+  <!-- <li class="nav-item" role="presentation">
+    <a class="nav-link" href="#" tabindex="-1" id="mobile-tab" data-bs-toggle="tab" data-bs-target="#mobile" aria-selected="false">Mobile</a>
+  </li> -->
+</ul>
+</div>
+</div>
+<div class="row">
+    <div class="col">
+        <div class="tab-contents" id="tabContents">
+            <div class="tab-pane fade show active" id="web" role="tabpanel" aria-labelledby="web-tab">
+                <div class="row g-3 g-lg-4 portfolio-content">
                         <div class="col-sm-6 col-lg-4 grid-item">
                             <div class="portfolio-box">
                                 <div class="portfolio-text">
@@ -496,7 +521,51 @@ $recaptcha_client_key = recaptcha_client_key();
                                 </div>
                             </div>
                         </div>
+                        <div class="col-sm-6 col-lg-4 grid-item">
+                            <div class="portfolio-box">
+                                <div class="portfolio-text">
+                                    <h6>Web App Design</h6>
+                                    <p>Law firm website designed for Lawlords Firm</p>
+                                    <a class="gallery-link" href="assets/img/lawlords.jpg"><i class="bi-arrow-up-right-circle"></i></a>
+                                </div>
+                                <div class="portfolio-img">
+                                    <img src="assets/img/lawlords.jpg" title="" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 grid-item">
+                            <div class="portfolio-box">
+                                <div class="portfolio-text">
+                                    <h6>Web Design</h6>
+                                    <p>Scrapper used for scrapping all kinds of websites. Available as both Good Chrome and Mozilla Firefox extensions</p>
+                                    <a class="gallery-link" href="assets/img/dkscrapper.jpg"><i class="bi-arrow-up-right-circle"></i></a>
+                                </div>
+                                <div class="portfolio-img">
+                                    <img src="assets/img/dkscrapper.jpg" title="" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 grid-item">
+                            <div class="portfolio-box">
+                                <div class="portfolio-text">
+                                    <h6>Web Design</h6>
+                                    <p>Real estate website</p>
+                                    <a class="gallery-link" href="assets/img/structhaus.jpg"><i class="bi-arrow-up-right-circle"></i></a>
+                                </div>
+                                <div class="portfolio-img">
+                                    <img src="assets/img/structhaus.jpg" title="" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
+            </div>
+  <!-- <div class="tab-pane fade" id="desktop" role="tabpanel" aria-labelledby="desktop-tab">...</div> -->
+  <!-- <div class="tab-pane fade" id="newsletter" role="tabpanel" aria-labelledby="newsletter-tab">...</div> -->
+   <!-- <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">...</div> -->
+        </div>
+    </div>
+<div>
+</div>
                 </div>
             </div>
         </section>
@@ -612,7 +681,7 @@ $recaptcha_client_key = recaptcha_client_key();
                                         </div>
                                         <div class="text">
                                             <label>Call me</label>
-                                            <p>Mon-Sat from 8am to 5pm. <span>+234 (90) 921 49449</span></p>
+                                            <p>Mon-Sat from 8am to 5pm. <span>+234 (91) 5997 3087</span></p>
                                         </div>
                                     </li>
                                 </ul>
@@ -675,7 +744,15 @@ $recaptcha_client_key = recaptcha_client_key();
             </div>
         </section>
         <!-- End contactus -->
+        
     </main>
+     <!-- popup -->
+            <div class="portfolio-popup">
+                <div class="wrapper-popup">
+                    <!-- <img src="#" alt="portfolio" class="popup" /> -->
+                </div>
+            </div>
+         <!-- ./popup -->
     <!-- Main -->
     <!-- Snigle 1 -->
     <!-- <div id="project_1" class="px-modal mfp-hide">
@@ -1022,6 +1099,7 @@ $recaptcha_client_key = recaptcha_client_key();
         </div>
     </footer>
     <!-- End Footer -->
+      <script src="./popup.js"></script>
      <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"></script>
@@ -1047,6 +1125,8 @@ $recaptcha_client_key = recaptcha_client_key();
      document.getElementById("contact_form").submit();
    }
  </script>
+
+
     
     <!-- end -->
 </body>
